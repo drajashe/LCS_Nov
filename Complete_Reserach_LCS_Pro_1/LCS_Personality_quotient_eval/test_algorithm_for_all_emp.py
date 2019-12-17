@@ -78,9 +78,10 @@ def main():
         Image(graph.create_png())
         graph.write_png('actual_decision.png')
         # printing the accuracy of the decision tree
-
+        print("Accuracy = ", accuracy_score(y_test,y_predict))
         y_pred_df=pd.DataFrame({'Predicted Posture of an employee':y_predict})
         y_pred_df=pd.concat([y_pred_df, y_test], ignore_index=True, axis=1)
+
         name_cols=['Name','Designation','Role']
         emp_details=test_data[name_cols]
 
@@ -88,6 +89,7 @@ def main():
 
         y_pred_df.columns= ['Name','Designation','Role','Actual posture feedback','Correct Predicted Posture of an employee']
         y_pred_df.to_excel("data/emp_details_analysis.xlsx")
+
 
     read_data_for_pro(test_data,feature_cols)
 

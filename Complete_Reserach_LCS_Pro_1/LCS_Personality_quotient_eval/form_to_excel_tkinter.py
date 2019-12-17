@@ -95,10 +95,10 @@ def focus10(event):
     # set focus on the address_field box
     posturing_field.focus_set()
 
-# Function to set focus
-def focus11(event):
-    # set focus on the address_field box
-    overall_field.focus_set()
+# # Function to set focus
+# def focus11(event):
+#     # set focus on the address_field box
+#     all_field.focus_set()
 
 
 
@@ -118,7 +118,7 @@ def clear():
     speed_field.delete(0, END)
     expression_field.delete(0, END)
     posturing_field.delete(0, END)
-    overall_field.delete(0, END)
+    # overall_field.delete(0, END)
 
 
 
@@ -139,8 +139,9 @@ def insert():
             quality_field.get()=="" and
             speed_field.get()=="" and
             expression_field.get()=="" and
-            posturing_field.get()=="" and
-            overall_field.get()=="" ):
+            posturing_field.get()==""
+            # overall_field.get()==""
+        ):
         print("empty input")
 
     else:
@@ -169,7 +170,7 @@ def insert():
 
 
         # save the file
-        wb.save('data/excel.xlsx')
+        wb.save('data/DETAILS_EMP.xlsx')
 
         # set focus on the name_field box
         name_field.focus_set()
@@ -319,7 +320,7 @@ if __name__ == "__main__":
 
     # whenever the enter key is pressed
     # then call the focus6 function
-    posturing_field.bind("<Return>", focus11)
+   # posturing_field.bind("<Return>", focus11)
 
 
     # grid method is used for placing
@@ -336,7 +337,7 @@ if __name__ == "__main__":
     speed_field.grid(row=9, column=1, ipadx="100")
     expression_field.grid(row=10, column=1, ipadx="100")
     posturing_field.grid(row=11, column=1, ipadx="100")
-    overall_field.grid(row=12, column=1, ipadx="100")
+    # overall_field.grid(row=12, column=1, ipadx="100")
 
 
     # call excel function
