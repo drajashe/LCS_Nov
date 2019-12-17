@@ -169,18 +169,18 @@ edit
 play_arrow
 
 brightness_5
-### import openpyxl module 
+###### import openpyxl module 
 import openpyxl 
   
-### Call a Workbook() function of openpyxl  
-### to create a new blank Workbook object 
+###### Call a Workbook() function of openpyxl  
+###### to create a new blank Workbook object 
 wb = openpyxl.Workbook() 
   
-### Get workbook active sheet   
-### from the active attribute 
+###### Get workbook active sheet   
+###### from the active attribute 
 sheet = wb.active 
   
-### One can change the name of the title 
+###### One can change the name of the title 
 sheet.title = "sheet1"
   
 print("sheet name is renamed as: " + sheet.title) 
@@ -195,46 +195,46 @@ edit
 play_arrow
 
 brightness_5
-### import openpyxl module 
+###### import openpyxl module 
 import openpyxl 
   
-### Call a Workbook() function of openpyxl  
-### to create a new blank Workbook object 
+###### Call a Workbook() function of openpyxl  
+###### to create a new blank Workbook object 
 wb = openpyxl.Workbook() 
   
-### Get workbook active sheet   
-### from the active attribute 
+###### Get workbook active sheet   
+###### from the active attribute 
 sheet = wb.active 
   
-### Cell objects also have row, column 
-### and coordinate attributes that provide 
-### location information for the cell. 
+###### Cell objects also have row, column 
+###### and coordinate attributes that provide 
+###### location information for the cell. 
   
-### Note: The first row or column integer 
-### is 1, not 0. Cell object is created by 
-### using sheet object's cell() method. 
+###### Note: The first row or column integer 
+###### is 1, not 0. Cell object is created by 
+###### using sheet object's cell() method. 
 c1 = sheet.cell(row = 1, column = 1) 
   
-### writing values to cells 
+###### writing values to cells 
 c1.value = "ANKIT"
   
 c2 = sheet.cell(row= 1 , column = 2) 
 c2.value = "RAI"
   
-### Once have a Worksheet object, one can 
-### access a cell object by its name also. 
-### A2 means column = 1 & row = 2. 
+###### Once have a Worksheet object, one can 
+###### access a cell object by its name also. 
+###### A2 means column = 1 & row = 2. 
 c3 = sheet['A2'] 
 c3.value = "RAHUL"
   
-### B2 means column = 2 & row = 2. 
+###### B2 means column = 2 & row = 2. 
 c4 = sheet['B2'] 
 c4.value = "RAI"
   
-### Anytime you modify the Workbook object 
-### or its sheets and cells, the spreadsheet 
-### file will not be saved until you call 
-### the save() workbook method. 
+###### Anytime you modify the Workbook object 
+###### or its sheets and cells, the spreadsheet 
+###### file will not be saved until you call 
+###### the save() workbook method. 
 wb.save("C:\\Users\\user\\Desktop\\demo.xlsx") 
 Output :
 Output
@@ -247,17 +247,17 @@ edit
 play_arrow
 
 brightness_5
-### import openpyxl module 
+###### import openpyxl module 
 import openpyxl 
   
-### Call a Workbook() function of openpyxl  
-### to create a new blank Workbook object 
+###### Call a Workbook() function of openpyxl  
+###### to create a new blank Workbook object 
 wb = openpyxl.Workbook() 
   
 sheet = wb.active 
   
-### Sheets can be added to workbook with the 
-### workbook object's create_sheet() method.  
+###### Sheets can be added to workbook with the 
+###### workbook object's create_sheet() method.  
 wb.create_sheet(index = 1 , title = "demo sheet2") 
   
 wb.save("C:\\Users\\user\\Desktop\\demo.xlsx") 
@@ -269,7 +269,7 @@ output
 To create a tkinter:
 https://www.geeksforgeeks.org/python-gui-tkinter/
 
-### Importing the module – tkinter
+###### Importing the module – tkinter
 - Create the main window (container)
 - Add any number of widgets to the main window
 - Apply the event Trigger on the widgets.
@@ -332,7 +332,7 @@ button.pack()
 r.mainloop()
 
 
-### Canvas: It is used to draw pictures and other complex layout like graphics, text and widgets.
+###### Canvas: It is used to draw pictures and other complex layout like graphics, text and widgets.
 The general syntax is:
 w = Canvas(master, option=value)
 master is the parameter used to represent the parent window.
@@ -397,7 +397,7 @@ Entry:It is used to input the single line text entry from the user.. For multi-l
 The general syntax is:
 
 
-# Python | Writing to an excel file using openpyxl module
+######## Python | Writing to an excel file using openpyxl module
 Prerequisite : Reading an excel file using openpyxl
 
 - Openpyxl is a Python library for reading and writing Excel (with extension xlsx/xlsm/xltx/xltm) files. The openpyxl module allows Python program to read and modify Excel files.
@@ -406,31 +406,31 @@ For example, user might have to go through thousands of rows and pick out few ha
 
 
 
- 
+
 
 Let’s see how to create and write to an excel-sheet using Python.
 
-## Code #1 : Program to print a active sheet title name
+########  Code #1 : Program to print a active sheet title name
 
 filter_none
 edit
 play_arrow
 
 brightness_5
-### import openpyxl module 
+###### import openpyxl module 
 import openpyxl 
   
-### Call a Workbook() function of openpyxl  
-### to create a new blank Workbook object 
+###### Call a Workbook() function of openpyxl  
+######  to create a new blank Workbook object 
 wb = openpyxl.Workbook() 
   
-### Get workbook active sheet   
-### from the active attribute.  
+######  Get workbook active sheet   
+######  from the active attribute.  
 sheet = wb.active 
   
-### Once have the Worksheet object, 
-### one can get its name from the 
-### title attribute. 
+######  Once have the Worksheet object, 
+######  one can get its name from the 
+######  title attribute. 
 sheet_title = sheet.title 
   
 print("active sheet title: " + sheet_title) 
@@ -445,18 +445,18 @@ edit
 play_arrow
 
 brightness_5
-### import openpyxl module 
+###### import openpyxl module 
 import openpyxl 
   
-### Call a Workbook() function of openpyxl  
-### to create a new blank Workbook object 
+###### Call a Workbook() function of openpyxl  
+###### to create a new blank Workbook object 
 wb = openpyxl.Workbook() 
   
-### Get workbook active sheet   
-### from the active attribute 
+######  Get workbook active sheet   
+###### from the active attribute 
 sheet = wb.active 
   
-### One can change the name of the title 
+###### One can change the name of the title 
 sheet.title = "sheet1"
   
 print("sheet name is renamed as: " + sheet.title) 
@@ -471,46 +471,46 @@ edit
 play_arrow
 
 brightness_5
-### import openpyxl module 
+###### import openpyxl module 
 import openpyxl 
   
-### Call a Workbook() function of openpyxl  
-### to create a new blank Workbook object 
+###### Call a Workbook() function of openpyxl  
+###### to create a new blank Workbook object 
 wb = openpyxl.Workbook() 
   
-### Get workbook active sheet   
-### from the active attribute 
+###### Get workbook active sheet   
+###### from the active attribute 
 sheet = wb.active 
   
-### Cell objects also have row, column 
-### and coordinate attributes that provide 
-### location information for the cell. 
+###### Cell objects also have row, column 
+###### and coordinate attributes that provide 
+###### location information for the cell. 
   
-### Note: The first row or column integer 
-### is 1, not 0. Cell object is created by 
-### using sheet object's cell() method. 
+######  Note: The first row or column integer 
+######  is 1, not 0. Cell object is created by 
+######  using sheet object's cell() method. 
 c1 = sheet.cell(row = 1, column = 1) 
   
-### writing values to cells 
+###### writing values to cells 
 c1.value = "ANKIT"
   
 c2 = sheet.cell(row= 1 , column = 2) 
 c2.value = "RAI"
   
-### Once have a Worksheet object, one can 
-### access a cell object by its name also. 
-### A2 means column = 1 & row = 2. 
+###### Once have a Worksheet object, one can 
+###### access a cell object by its name also. 
+###### A2 means column = 1 & row = 2. 
 c3 = sheet['A2'] 
 c3.value = "RAHUL"
   
-### B2 means column = 2 & row = 2. 
+###### B2 means column = 2 & row = 2. 
 c4 = sheet['B2'] 
 c4.value = "RAI"
   
-### Anytime you modify the Workbook object 
-### or its sheets and cells, the spreadsheet 
-### file will not be saved until you call 
-### the save() workbook method. 
+######  Anytime you modify the Workbook object 
+######  or its sheets and cells, the spreadsheet 
+######  file will not be saved until you call 
+###### the save() workbook method. 
 wb.save("C:\\Users\\user\\Desktop\\demo.xlsx") 
 Output :
 Output
@@ -523,17 +523,17 @@ edit
 play_arrow
 
 brightness_5
-### import openpyxl module 
+######  import openpyxl module 
 import openpyxl 
   
-### Call a Workbook() function of openpyxl  
-### to create a new blank Workbook object 
+######  Call a Workbook() function of openpyxl  
+######  to create a new blank Workbook object 
 wb = openpyxl.Workbook() 
   
 sheet = wb.active 
   
-### Sheets can be added to workbook with the 
-### workbook object's create_sheet() method.  
+######  Sheets can be added to workbook with the 
+######  workbook object's create_sheet() method.  
 wb.create_sheet(index = 1 , title = "demo sheet2") 
   
 wb.save("C:\\Users\\user\\Desktop\\demo.xlsx") 
@@ -541,7 +541,7 @@ Output :
 output
 
 
-# Python | Simple registration form using Tkinter
+###### Python | Simple registration form using Tkinter
 Prerequisites : Tkinter Introduction, openpyxl module.
 
 Python provides the Tkinter toolkit to develop GUI applications. Now, it’s upto the imagination or necessity of developer, what he/she want to develop using this toolkit. Let’s make a simple information form GUI application using Tkinter. In this application, User has to fill up the required information and that information is automatically written into an excel file.
@@ -555,16 +555,16 @@ Firstly, create an empty excel file, after that pass an absolute path of the exc
 Below is the implementation :
 filter_none
 brightness_5
-# import openpyxl and tkinter modules 
+###### import openpyxl and tkinter modules 
 from openpyxl import *
 from tkinter import *
   
-# globally declare wb and sheet variable 
+###### globally declare wb and sheet variable 
   
-# opening the existing excel file 
+###### # opening the existing excel file 
 wb = load_workbook('C:\\Users\\Admin\\Desktop\\excel.xlsx') 
   
-# create the sheet object 
+#######  create the sheet object 
 sheet = wb.active 
   
   
@@ -591,44 +591,44 @@ def excel():
     sheet.cell(row=1, column=7).value = "Address"
   
   
-# Function to set focus (cursor) 
+#######  Function to set focus (cursor) 
 def focus1(event): 
     #set focus on the course_field box 
     course_field.focus_set() 
   
   
-# Function to set focus 
+#######  Function to set focus 
 def focus2(event): 
     #set focus on the sem_field box 
     sem_field.focus_set() 
   
   
-# Function to set focus 
+#######  Function to set focus 
 def focus3(event): 
     #set focus on the form_no_field box 
     form_no_field.focus_set() 
   
   
-# Function to set focus 
+####### Function to set focus 
 def focus4(event): 
     #set focus on the contact_no_field box 
     contact_no_field.focus_set() 
   
   
-# Function to set focus 
+###### Function to set focus 
 def focus5(event): 
     #set focus on the email_id_field box 
     email_id_field.focus_set() 
   
   
-# Function to set focus 
+######  Function to set focus 
 def focus6(event): 
     #set focus on the address_field box 
     address_field.focus_set() 
   
   
-# Function for clearing the 
-# contents of text entry boxes 
+###### # Function for clearing the 
+###### # contents of text entry boxes 
 def clear(): 
       
     #clear the content of text entry box 
@@ -641,8 +641,8 @@ def clear():
     address_field.delete(0, END) 
   
   
-# Function to take data from GUI  
-# window and write to an excel file 
+###### # Function to take data from GUI  
+###### # window and write to an excel file 
 def insert(): 
       
     # if user not fill any entry 
@@ -686,7 +686,7 @@ def insert():
         clear() 
   
   
-# Driver code 
+###### # Driver code 
 if __name__ == "__main__": 
       
     #create a GUI window 
